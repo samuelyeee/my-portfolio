@@ -1,0 +1,328 @@
+@media (min-width: 768px) {
+    
+    .container {
+        padding-right: 3em;
+    }
+    
+    /* Landing */
+    .landing {
+        border: 2em solid white;
+    }
+    
+    .name {
+        font-size: 20px;
+        width: 100%;
+    }
+    
+    .linebreak{
+        padding-bottom: 1em;
+    }
+    
+    .lead{
+        width: 100%;
+    }
+    
+    .stupid {
+        font-size: 18px!important;
+        padding-bottom: 0.3em;
+    }
+    
+    #changeText{
+        font-size: 1.5em!important;
+        letter-spacing: 20px;
+        padding-bottom: 0.1em;
+    }
+    
+    .outer {
+        position: relative!important;
+    }
+    
+    /* Navigation */
+    nav {
+        background-color: transparent;
+        padding: 0;
+        top: 2.5em!important;
+        width: 100%;
+    }
+    
+    nav.navbar.shrink {
+        background-color: rgba(255, 255, 255, 1);
+        top: 0!important;
+        -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+        -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+        box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+    }
+    
+    .navbar-brand img{
+        left: 10em;
+    }
+    .navbar-nav li a{
+        color: white;
+    }
+    
+    .black li a{
+        color: black!important;
+    }
+    
+    .black li .active {
+        border-bottom: 1px solid black;
+    }
+    
+ 
+    .navbar-brand img {
+        left: 6em;
+    }
+    
+    .navbar-nav {
+        position: absolute;
+        right: 8em;
+    }
+    
+    .navbar-nav li a{
+        font-size: 16px;
+    }
+    
+    /* ABOUT */
+    
+    .heading {
+        font-size: 8em!important;
+        display: block;
+    }
+    
+    .description {
+        display: block;
+    }
+    
+    .aboutpage {
+        position: fixed;
+        height: 100vh;
+    }
+    
+    
+    /* WORK */
+    
+    .work {
+        margin-top: 0px; /* Move work back to top */
+    }
+    
+    .projects li{
+           padding: 0em 8em;
+    }
+    
+    .single-project {
+        box-shadow: none;
+    }
+    
+    .single-project:nth-of-type(1) {
+        background-position: top right;
+        background-size: 50%;
+    }
+    
+    .single-project:nth-of-type(2) {
+        background-position: top left;
+        background-size: 50%;
+    }
+    
+    .single-project:nth-of-type(3) {
+        background-position: top right;
+        background-size: 50%;
+    }
+    
+    .single-project:nth-of-type(4) {
+        background-position: top left;
+        background-size: 50%;
+    }
+    
+    .project-title{
+        font-size: 4em;
+        text-shadow: none;
+    }
+    
+    .role {
+        text-shadow: none;
+    }
+    
+    .info-left{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    text-align: left;
+    }
+
+    .info-right{
+        position: absolute;
+        top: 50%;
+        right: 10em;
+        transform: translate(0%,-50%);
+        text-align: right;
+    }
+    
+    .info-right hr{
+        margin-right: 0!important;
+        margin-left: auto;
+    }
+    
+    .img-padding {
+        padding-top: 0em;
+    }
+    
+    /* Projects */
+    
+    .project-name{
+        position: fixed;
+        font-weight: 700;
+        font-size: 6em;
+        top: 22%;
+        padding-left: 2em;
+        z-index: 10;
+
+    }
+
+    
+    /*Bloopy */
+    
+    .onepreview {
+        width: 100%;
+        height: 60vh;
+       /* background-image: url('../img/bloopy.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 70%;
+        background-attachment: fixed; */
+    }
+    
+    img.bloopyapp {
+        position:fixed;
+        max-width:85%;
+        max-height:85%;
+        margin-top:-30%;
+        margin-left: -60%; 
+    }
+    /* XEN Data */
+
+    .twopreview {
+        width: 100%;
+        height: 60vh;
+       background-image: url('../img/xendata.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 70%; 
+        background-attachment: fixed;
+    }
+    
+    /*img.xenapp {
+        position:fixed;
+        max-width:60%;
+        max-height:100%;
+        margin-top: 5%;
+        margin-left: -45%; 
+    } */
+    
+    /* Skippy */
+
+    .threepreview {
+        width: 100%;
+        height: 60vh;
+        background-image: url('../img/skippy.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 70%;
+        background-attachment: fixed;
+    }
+    
+    /* Waterloo App */
+
+    .fourpreview {
+        width: 100%;
+        height: 60vh;
+        background-image: url('../img/waterloo.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 70%;
+        background-attachment: fixed;
+    }
+    
+    /* CONTACT */
+    
+    .contactpage{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .contactform {
+        position: relative;
+        padding-top: 3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    /* Footer  */
+    
+    .footer {
+        display: block;
+        position: relative;
+    }
+    
+    .footertwo {
+        position: absolute;
+        width: 90%;
+        bottom: 3em;
+        color: #363637;
+        display: block;
+    }
+    
+    .footertwo a{
+        color: #363637;
+    }
+    .social {
+        text-align: left;
+    }
+    
+    .social ul li {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    
+    .social ul li i{
+        color: white;
+    }
+    
+    .footertwo .social ul li i{
+        color: #363637;
+    }
+    
+    .caption {
+        text-align: right;
+        margin-right: 1em;    
+        
+    }
+       
+
+    
+    /* Start the vertical centering */
+  
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+      
+    /* Handle the widths */
+    
+    .inner {
+        padding: 50px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    #changeText{
+        font-size: 2.5em!important;
+    }
+    
+    .cover-container {
+        width: 90%;
+    }
+    
+    
+}

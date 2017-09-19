@@ -1,0 +1,764 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700,900');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+
+/* Preloader */
+.preloader {
+     position: fixed;
+    left: 0;
+    top: 0;
+     width: 100vw;
+     height: 100vh;
+     z-index: 10000;
+     background: url("../img/preloader.gif") center no-repeat #fff;
+    background-size: cover;
+}
+
+
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/* Resize */
+.no-resize, .resize {
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 1.4vh;
+}
+
+/*
+ * Base structure
+ */
+
+.landing {
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border: 1em solid white;
+}
+
+body {
+    color: #fff;
+    text-align: center;
+    overflow-x:hidden;
+    /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+   /* -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+
+/* Padding for spacing */
+
+.outer {
+    left: 0;
+    display: table;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: /*whatever width you want*/;
+}
+
+
+
+
+/* -------------------------------- 
+
+Navigation
+
+-------------------------------- */
+
+nav {
+    position: fixed;
+    height: 75px;
+	background-color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+    display: block;
+}
+
+.navbar-brand img{ /* name */
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    top: 20px;
+}
+
+.navbar-nav li a{
+    color: black;
+	font-size: 1em!important;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+.navbar-nav li .active{
+    font-weight: 700;
+    border-bottom: 1px solid white;
+}
+
+.navbar-nav li a:hover{
+	background-color: transparent!important;
+	color: black!important;
+    font-weight: 700;
+}
+
+.icon-bar { /* hamburger bar */
+   background-color: black!important;
+}
+
+.navbar-collapse {
+    margin-top: 20px;
+}
+
+/* Collapse Nav Menu Style */
+.collapsing, .in {
+	background-color: #f7f7f7;
+}
+
+.collapsing ul li a, .in ul li a {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	color: #555!important;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 50px 10px;
+}
+
+.name {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 95%;
+}
+
+.lead {
+    letter-spacing: 2px;
+    width: 95%;
+}
+
+.linebreak{
+    width: 75px;
+    padding-bottom: 1vh;
+}
+
+.stupid {
+    font-size: 15px!important;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Word Changes */
+#changeText {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+
+
+.heading {
+        font-size: 4em!important;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 12px;
+        line-height: 1.2em;
+}
+
+/* About */
+
+.aboutpage {
+    background-color: #F7F7F6;
+    border: 1.2em solid #FF8552;
+}
+
+.about-content {
+    display: block;
+    position: relative;
+    padding-top: 8em;
+    clear: both;
+}
+
+.about-content:after {
+    content: '';
+    display: block;
+}
+
+.about {
+        color: #FF8552;
+}
+
+.description{
+    position: relative;
+    padding-top: 3em;
+    padding-left: 2.5em;
+    padding-right: 3.6em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description p{
+    font-size: 1.3em!important;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+/* Work */
+
+.work {
+    margin-top: 75px; /* shifts to line up with nav */
+}
+
+.projects li {
+    padding: 0em 2em;
+    list-style-type: none;
+    display: block;
+    margin-left: -40px; /* moves li to left 0 */
+    overflow: hidden;
+}
+
+.single-project {
+    position: relative;
+    width: 100vw;
+    height: 28em;
+    padding: 0;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.25);
+}
+
+.single-project:nth-of-type(1) {
+    background-color: #62ade0;
+    background-image: url('../img/bloopy.png');
+    background-repeat: no-repeat;
+    background-position: bottom -80px center;
+    background-size: 140%;
+}
+
+.single-project:nth-of-type(2) {
+    background-color: #923896;
+    background-image: url('../img/xendata.png');
+    background-repeat: no-repeat;
+    background-position: bottom -50px center;
+    background-size: 120%;
+}
+
+.single-project:nth-of-type(3) {
+    background-color: #f05c64;
+    background-image: url('../img/skippy.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 150%;
+}
+
+.single-project:nth-of-type(4) {
+    background-color: #ecae52;
+    background-image: url('../img/waterloo.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 120%;
+}
+
+.project-title{
+    font-size: 10vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px black;
+}
+
+.role{
+    font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 0.5px 1px 0.5px black;
+}
+
+.divide {
+    width: 50px;
+    color: white;
+}
+
+.info-left{
+    position: absolute;
+    top: 50%;
+    transform: translate(-5%,-50%);
+    text-align: left;
+}
+
+.info-left hr{
+    margin-left: 0;
+}
+
+.info-right{
+    position: absolute;
+    top: 50%;
+    transform: translate(-5%,-50%);
+    text-align: left;
+}
+
+.info-right hr{
+    margin-left: 0;
+}
+
+/* Projects */
+.project {
+    padding: 0;
+    margin: 0;
+}
+
+.project-name{
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    top: 90px;
+    z-index: 10;
+}
+
+.xen-name{
+    position: fixed;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 5em;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    margin-top: -13%; /* Negative half of height. */
+    margin-left: -40%; /* Negative half of width. */
+}
+
+.divide-title{
+    width: 1.5em;
+    border: 3px solid white;
+    text-align: left;
+}
+
+.section {
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.screen-image img {
+    padding-top: 3em;
+}
+
+.inspiration img {
+    padding-bottom: 3em;
+}
+
+/* Bloopy */
+
+.onepreview {
+    width: 100%;
+    height: 30vh;
+    background-color: #62ade0;
+    text-align: center;
+}
+
+.onecontent{
+    background-color: white;
+    padding-top: 3em;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: 300;
+    text-align: left;
+    position: relative;
+    display:inline-block;
+    z-index: 20;
+    border: 1.5em solid #62ade0;
+}
+
+div.shadow {
+    position:absolute;
+    max-width:45%;
+    max-height:45%;
+    top:50%;
+    left:70%;
+    overflow:visible;
+}
+
+
+
+
+.bloopy h2 {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: dimgrey;
+    letter-spacing: 0.2em;
+}
+
+
+.bloopy .section{
+    color: #62ade0;
+}
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+/* XEN Data */
+
+.twopreview {
+    display: block;
+    width: 100%;
+    height: 30vh;
+    background-color: #923896;
+}
+
+.twocontent{
+    background-color: white;
+    padding-top: 3em;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: 300;
+    text-align: left;
+    position: relative;
+    display:inline-block;
+    width: 100%;
+    z-index: 20;
+    border: 1.5em solid #923896;
+}
+
+.xendata h2 {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: dimgrey;
+    letter-spacing: 0.2em;
+}
+
+.xendata .section{
+    color: #923896;
+}
+
+.demo {
+    width: 100%;
+    border: 2px solid #923896;
+    padding: 2em;
+    background: #923896;
+}
+
+.demo:hover{
+    background: none;
+}
+
+.demo:hover a{
+    color: #923896;
+}
+
+.img-padding {
+    padding-top: 2em;
+}
+
+
+
+/* Skippy */
+
+.threepreview {
+    width: 100%;
+    height: 30vh;
+    background-color: #f05c64;
+}
+
+.threecontent{
+    background-color: white;
+    padding-top: 3em;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: 300;
+    text-align: left;
+    position: relative;
+    display:inline-block;
+    z-index: 20;
+    border: 1.5em solid #f05c64;
+}
+
+.skippy h2 {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: dimgrey;
+    letter-spacing: 0.2em;
+}
+
+.skippy .section{
+    color: #f05c64;
+}
+
+/* Waterloo App */
+
+.fourpreview {
+    width: 100%;
+    height: 30vh;
+    background-color: #ecae52;
+}
+
+.fourcontent{
+    background-color: white;
+    padding-top: 3em;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: 300;
+    text-align: left;
+    position: relative;
+    display:inline-block;
+    z-index: 20;
+    border: 1.5em solid #ecae52;
+}
+
+.waterloo h2 {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: dimgrey;
+    letter-spacing: 0.2em;
+}
+
+.waterloo .section{
+    color: #ecae52;
+}
+
+/* Contact */
+
+.contactpage {
+    background-color: #F7F7F6;
+    border: 1.2em solid #5FDCB3;
+}
+
+.touch {
+        color: #5FDCB3;
+}
+
+.contactform {
+    padding-top: 4em;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: black;
+}
+
+input::placeholder, textarea::placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: black;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: black;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: white;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: black;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: black;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: black;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: white;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 100%;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: black;
+  border: solid 1px black;
+    margin-bottom: 5px;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #5FDCB3;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px black;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: black;
+  color: white;
+}
+
+#submit {  
+  padding: 0;
+  margin: 10px 0px 0px 0px;
+  width: 100%;
+    height: 70px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  color: white;
+  outline:none;
+  cursor: pointer;
+    border: none;
+  background-color: #5FDCB3;
+}
+
+#submit:hover {
+    color: #5FDCB3;
+    border: 3px solid #5FDCB3;
+    background-color: transparent;
+}
+
+.pager li a{
+    color: grey;
+}
+
+
+/*
+ * Footer
+ */
+
+.footer {
+    font-family: 'Lato', sans-serif;
+    display: none;
+    width: 100%;
+    color: #999; /* IE8 proofing */
+    color: rgba(255,255,255,.5);
+}
+
+.footertwo {
+    display: none;
+}
+
+.footertwo, .about-content:after {
+}
+
+
